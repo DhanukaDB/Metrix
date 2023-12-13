@@ -1,0 +1,44 @@
+import { Link } from 'react-router-dom';
+import { BottomBar } from '../';
+import { productCards } from '../../constants';
+
+function formatTitles(param) {
+   return param.replace(/\s+/g, '-').toLowerCase();
+}
+
+const CupsAndUnderwareHome = () => {
+   return (
+      <main>
+         <section className="custom-container mx-auto pt-20">
+            <header>
+               <div className="text-4xl font-poppins font-bold capitalize text-[#6D7E15] text-center md:text-left"  aria-level={1}>cups and underwires for<br />intimate apparel</div>
+            </header>
+            <div className="w-full my-4 border border-t-primaryBlue"></div>
+            <div className="block md:flex md:flex-row justify-around">
+               {
+                  productCards[2].categories.map((product, index) => (
+                     <section aria-labelledby={formatTitles(product.title) + '-section'} className="mt-10 mb-32 md:mb-0" key={index}>
+                        <div id={formatTitles(product.title) + '-section'} className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-[#137BA4] mb-10"  aria-level={2}>{product.title}</div>
+                        <div className="relative w-4/5 mx-auto rounded-6xl overflow-hidden green-shadow">
+                           <img src={product.image} alt={`image-${index}`} className="w-full" />
+                        </div>
+                        <div className="text-center my-14">
+                           <span className="text-center">
+                              <Link to={product.path} role="link" aria-label={formatTitles(product.title) + '-see-all-products-' + index} title={'Link to view product.title all products ' + index}
+                                 className="px-10 py-5 rounded-4xl font-poppins font-semibold text-[#000000] uppercase bg-primaryBlue hover:bg-primaryGreen transition-all">See all products</Link>
+                           </span>
+                        </div>
+                        <div className="mt-10 text-center">
+                           <a href="mailto:info@metricproducts.com" aria-label={'contact-metric-company-by-sending-an-email-' + index} title={'Contact us email on cups and underware products page ' + index} className="uppercase font-poppins font-semibold text-[#000000] bg-primaryGreen hover:bg-primaryBlue transition-all rounded-3xl px-5 py-2" accesskey="d">contact us</a>
+                        </div>
+                     </section>
+                  ))
+               }
+            </div>
+         </section>
+         <BottomBar />
+      </main>
+   );
+}
+
+export default CupsAndUnderwareHome;
