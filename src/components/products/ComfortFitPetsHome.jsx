@@ -19,10 +19,10 @@ const ComfortFitPetsHome = () => {
                   <div key={indexOne}>
                      <section aria-labelby={formatTitles(product.title) + '-section'} className="mt-10">
                         <div id={formatTitles(product.title) + '-section'} className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-[#137BA4] mb-10"  aria-level={2}>{product.title}</div>
-                        <div className="block md:flex md:flex-row justify-center md:space-x-10">
+                        <div className="block md:flex md:flex-row justify-center md:space-x-10"  role='region'>
                            {
                               product.types.map((type, indexTwo) => (
-                                 <div key={indexTwo} className="mb-20 md:mb-0">
+                                 <div key={indexTwo} className="mb-20 md:mb-0" >
                                     <div>
                                        <img src={type.imageOne} alt={'imageOneOf' + indexTwo} className="w-full border-2 rounded-lg" />
                                     </div>

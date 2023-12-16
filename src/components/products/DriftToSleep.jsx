@@ -18,7 +18,7 @@ const DriftToSleep = () => {
                   <div key={indexOne}>
                      <section aria-labelby={formatTitles(product.title) + '-section'} className="mt-10">
                         <h2 id={formatTitles(product.title) + '-section'} className="text-5xl font-poppins font-bold uppercase text-center text-[#137BA4] mb-10"  aria-level={2}>{product.title}</h2>
-                        <div className="flex flex-row justify-center space-x-10">
+                        <div className="flex flex-row justify-center space-x-10" >
                            {
                               product.types.map((type, indexTwo) => (
                                  <div key={indexTwo}>
@@ -37,7 +37,7 @@ const DriftToSleep = () => {
                                     }
                                     {
                                        type.subTypes ?
-                                          <div className="block md:flex md:flex-row md:space-x-10">
+                                          <div className="block md:flex md:flex-row md:space-x-10" role='region'>
                                              {
                                                 type.subTypes.map((sType, indexThree) => (
                                                    <div key={indexThree} className="mb-10 md:mb-0">

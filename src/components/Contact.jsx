@@ -15,11 +15,11 @@ const Contact = () => {
                                 <label for="fullname" className="uppercase font-semibold">
                                     Full Name
                                 </label>
-                                <input aria-labelby="name" id="fullname" type="text" name="fullname" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
+                                <input aria-labelby="input name" id="fullname" type="text" name="fullname" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
                                 <label for="contact-email" className="uppercase font-semibold">
                                     Email
                                 </label>
-                                <input  aria-labelby="email" id="contact-email" name="contact-email" type="email" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
+                                <input  aria-labelby="input email" id="contact-email" name="contact-email" type="email" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
                                 <label for="contact-message" className="uppercase font-semibold">
                                     Message
                                 </label>

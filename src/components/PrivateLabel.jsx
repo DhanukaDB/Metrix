@@ -16,13 +16,13 @@ const PrivateLabel = () => {
                             any design. To accomplish this and become a leading swimwear and bra cup supplier around the world, we have
                             developed and perfected a product we call Metric 66.
                         </p>
-                        <ol className="list-disc font-poppins ml-5">
+                        <ul className="list-disc font-poppins ml-5">
                             <li className="mb-4"> Metric 66 is often mistaken for Neoprene which it is not. Neoprene cannot be molded and is not breathable. It is also extremely heavy.</li>
                             <li className="mb-4">On the other hand, metric 66 is breathable, light weighted, hand washable and is very quick to dry.</li>
                             <li className="mb-4"> It is versatile and can be created in a variety of stiffness' and softnes'.</li>
                             <li className="mb-4"> Metric 66 is Oeko Tex certified, which is a European certification which ensures the contents and make of a product are safe to be next to the most intimate parts of the body.</li>
                             <li>Ideally suited to create all sorts of three dimensional objects, metric 66 can be created in any color imaginable.</li>
-                        </ol>
+                        </ul>
                     </section>
                     <section aria-labelledby="customizable-product-section" className="font-poppins text-center mt-10">
                         <div id="customizable-product-section" className="text-3xl font-semibold font-poppins text-dimDark" aria-level={1}>All products are customizable.</div>
