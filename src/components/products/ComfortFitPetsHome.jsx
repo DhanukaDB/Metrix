@@ -11,7 +11,7 @@ const ComfortFitPetsHome = () => {
       <main>
          <section className="custom-container mx-auto pt-20">
             <header>
-               <div className="text-4xl font-poppins font-bold capitalize text-[#6D7E15] text-center md:text-left"  aria-level={1} >comfort fit pets</div>
+               <h1 className="text-4xl font-poppins font-bold capitalize text-[#6D7E15] text-center md:text-left"  aria-level={1} >comfort fit pets</h1>
             </header>
             <div className="w-full my-4 border border-t-primaryBlue"></div>
             {
@@ -26,11 +26,11 @@ const ComfortFitPetsHome = () => {
                                     <div>
                                        <img src={type.imageOne} alt={'imageOneOf' + indexTwo} className="w-full border-2 rounded-lg" />
                                     </div>
-                                    <div className="uppercase text-2xl font-semibold font-poppins text-[#6D7E15] text-center my-5 px-10"  aria-level={3}>{type.title}</div>
+                                    <h2 className="uppercase text-2xl font-semibold font-poppins text-[#6D7E15] text-center my-5 px-10"  aria-level={2}>{type.title}</h2>
                                     <div className="mt-8 mb-20 text-center">
                                        <a href={type.amazonLink} title={product.title + ' order on amazon link ' + indexTwo} aria-labelby={formatTitles(product.title) + '-order-on-amazon-' + indexTwo} target="_blank"
                                           className="font-poppins uppercase font-semibold text-[#000000] rounded-xl px-5 py-2 bg-primaryGreen hover:bg-primaryBlue transition-all"
-                                          accesskey="c">order on amazon</a>
+                                          >order on amazon</a>
                                        <br /><br />
                                        <Link to={type.fitInstructionsLink} role="link" aria-labelby={formatTitles(product.title) + '-view-fit-instructions-' + indexTwo}
                                           title={'Link to go to ' + product.title + ' view fit instructions ' + indexTwo}>
@@ -40,7 +40,7 @@ const ComfortFitPetsHome = () => {
                                        </Link>
                                     </div>
                                     <div className="w-full rounded-lg border overflow-hidden bg-white p-4">
-                                       <div className="uppercase font-bold text-center"  aria-level={4}>Available Colors</div>
+                                       <h3 className="uppercase font-bold text-center"  aria-level={3}>Available Colors</h3>
                                        <div className="grid sm:grid-cols-3 md:grid-cols-5 gap-4 mt-3">
                                           {
                                              type.colors.map((colorImg, colorIndex) => (

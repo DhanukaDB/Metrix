@@ -10,14 +10,14 @@ const DriftToSleep = () => {
       <main>
          <section className="custom-container mx-auto pt-20">
             <header>
-               <div className="text-4xl font-poppins font-bold capitalize text-[#6D7E15]"  aria-level={1}>drift to sleep</div>
+               <h1 className="text-4xl font-poppins font-bold capitalize text-[#6D7E15]"  aria-level={1}>drift to sleep</h1>
             </header>
             <div className="w-full my-4 border border-t- [#137BA4]"></div>
             {
                productCards[1].categories.map((product, indexOne) => (
                   <div key={indexOne}>
                      <section aria-labelby={formatTitles(product.title) + '-section'} className="mt-10">
-                        <div id={formatTitles(product.title) + '-section'} className="text-5xl font-poppins font-bold uppercase text-center text-[#137BA4] mb-10"  aria-level={2}>{product.title}</div>
+                        <h2 id={formatTitles(product.title) + '-section'} className="text-5xl font-poppins font-bold uppercase text-center text-[#137BA4] mb-10"  aria-level={2}>{product.title}</h2>
                         <div className="flex flex-row justify-center space-x-10">
                            {
                               product.types.map((type, indexTwo) => (
@@ -32,7 +32,7 @@ const DriftToSleep = () => {
                                           <div className="my-10 text-center">
                                              <a href={type.amazonLink} aria-labelby={formatTitles(product.title) + '-order-on-amazon-' + indexTwo} title={'amazon order link for ' + product.title + ' ' + indexTwo} target="_blank"
                                                 className="font-poppins uppercase font-semibold text-[#000000] text-xl rounded-xl px-5 py-2 bg-primaryGreen hover:bg-primaryBlue transition-all"
-                                                accesskey="e">order on amazon</a>
+                                               >order on amazon</a>
                                           </div> : null
                                     }
                                     {
@@ -48,7 +48,7 @@ const DriftToSleep = () => {
                                                       <div className="flex flex-row space-x-3 justify-center items-center">
                                                          {
                                                             sType.pieces.map((piece, indexFour) => (
-                                                               <a href={piece.url} aria-labelby={indexThree + '-select-pair-amount-' + indexFour} title={'Link for order number of pairs from amazon ' + indexThree + '-' + indexFour} target="_blank" key={indexFour} accesskey="f">
+                                                               <a href={piece.url} aria-labelby={indexThree + '-select-pair-amount-' + indexFour} title={'Link for order number of pairs from amazon ' + indexThree + '-' + indexFour} target="_blank" key={indexFour} >
                                                                   <span className="bg-primaryBlue hover:bg-primaryGreen rounded-lg px-2 py-1 font-poppins text-[#000000]">{piece.pair}</span>
                                                                </a>
                                                             ))

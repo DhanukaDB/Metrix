@@ -29,7 +29,7 @@ const Navbar = () => {
       <ul   className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li  className='px-5' key={index} >
-            <NavLink   to={nav.path} end={nav.path !== 'products' ? true : false} id={nav.id} aria-labelby={nav.title}
+            <NavLink role="link"  to={nav.path} end={nav.path !== 'products' ? true : false} id={nav.id} aria-labelby={nav.title}
               className={({ isActive }) => isActive ? `${linkStyleClasses}` + 'bg-primaryGreen' : `${linkStyleClasses}` + 'bg-white'}
               onClick={() => nav.subMenu ? setDropDown(!dropdown) : setDropDown(false)}>
               {nav.title}
@@ -64,7 +64,7 @@ const Navbar = () => {
           alt="menuicon"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
-          accesskey="j"
+         
         />
 
         <div  className={`${!toggle ? "hidden" : "flex"} px-3 py-6 bg-white/80 shadow-lg absolute top-20 right-0 my-5 w-foll h-[89%] min-w-[140px] rounded-xl z-40 sidebar`}>

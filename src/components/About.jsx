@@ -5,13 +5,16 @@ const About = () => {
     return (
         <>
            
+           <header className="invisible">
+                <h1 title='aboutpage'>Aboutus</h1>
+            </header>
             <main>
                 <div className="custom-container mx-auto pt-20">
                     {
                         aboutUsSections.map((section, index) => (
                             <div key={index}>
                                 <section aria-labelledby={'about-us-section-' + index}>
-                                    <div id={'about-us-section-' + index} className="text-5xl font-poppins font-bold uppercase text-[#6D7E15] text-center mb-10"  aria-level={2}>{section.title}</div>
+                                    <h2 id={'about-us-section-' + index} className="text-5xl font-poppins font-bold uppercase text-[#6D7E15] text-center mb-10"  aria-level={2}>{section.title}</h2>
                                     <p className="text-center font-poppins mb-10">{section.description}</p>
                                 </section>
                                 {

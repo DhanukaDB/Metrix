@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <SkipLink className="primary skip-link">
-        <button type="button" accesskey="g">Skip Navigation Links</button>
+        <button type="button" >Skip Navigation Links</button>
       </SkipLink>
       <Navbar />
       <Routes>

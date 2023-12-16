@@ -11,14 +11,14 @@ const CupsAndUnderwareHome = () => {
       <main>
          <section className="custom-container mx-auto pt-20">
             <header>
-               <div className="text-4xl font-poppins font-bold capitalize text-[#6D7E15] text-center md:text-left"  aria-level={1}>cups and underwires for<br />intimate apparel</div>
+               <h1 className="text-4xl font-poppins font-bold capitalize text-[#6D7E15] text-center md:text-left"  aria-level={1}>cups and underwires for<br />intimate apparel</h1>
             </header>
             <div className="w-full my-4 border border-t-primaryBlue"></div>
             <div className="block md:flex md:flex-row justify-around">
                {
                   productCards[2].categories.map((product, index) => (
                      <section aria-labelledby={formatTitles(product.title) + '-section'} className="mt-10 mb-32 md:mb-0" key={index}>
-                        <div id={formatTitles(product.title) + '-section'} className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-[#137BA4] mb-10"  aria-level={2}>{product.title}</div>
+                        <h2 id={formatTitles(product.title) + '-section'} className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-[#137BA4] mb-10"  aria-level={2}>{product.title}</h2>
                         <div className="relative w-4/5 mx-auto rounded-6xl overflow-hidden green-shadow">
                            <img src={product.image} alt={`image-${index}`} className="w-full" />
                         </div>
@@ -29,7 +29,7 @@ const CupsAndUnderwareHome = () => {
                            </span>
                         </div>
                         <div className="mt-10 text-center">
-                           <a href="mailto:info@metricproducts.com" aria-label={'contact-metric-company-by-sending-an-email-' + index} title={'Contact us email on cups and underware products page ' + index} className="uppercase font-poppins font-semibold text-[#000000] bg-primaryGreen hover:bg-primaryBlue transition-all rounded-3xl px-5 py-2" accesskey="d">contact us</a>
+                           <a href="mailto:info@metricproducts.com" aria-label={'contact-metric-company-by-sending-an-email-' + index} title={'Contact us email on cups and underware products page ' + index} className="uppercase font-poppins font-semibold text-[#000000] bg-primaryGreen hover:bg-primaryBlue transition-all rounded-3xl px-5 py-2">contact us</a>
                         </div>
                      </section>
                   ))

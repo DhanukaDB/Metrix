@@ -4,13 +4,13 @@ const PrivateLabel = () => {
     return (
         <>
             <header className="invisible">
-                <span title='Private label page'>Private label page</span>
+                <span title='Privacy title'>Private label page</span>
             </header>
             <main>
                 <div className="custom-container mx-auto pt-20">
                     <section aria-labelledby="private-label-section" role='banner'>
-                        <div id="private-label-section" className="text-5xl font-poppins font-bold uppercase text-[#6D7E15] text-center mb-10" aria-level={1}>Private Label</div>
-                        <p className="text-justify font-poppins mb-10">
+                        <h1 id="private-label-section" className="text-5xl font-poppins font-bold uppercase text-[#6D7E15] text-center mb-10" aria-level={1}>Private Label</h1>
+                        <p className=" font-poppins mb-10">
                             Metric products is a 70 years plus family owned business. We have been making bra and swim cups for a long
                             time and have perfected the technique of giving softness to products while being able to hold shapes of almost
                             any design. To accomplish this and become a leading swimwear and bra cup supplier around the world, we have

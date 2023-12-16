@@ -39,7 +39,7 @@ const ProductHome = () => {
                      <Link to={card.path} role="link" aria-label={'see-all-products-' + index} title={'Link to see all products ' + index}>
                         <button title="See all products" aria-label={'see-all-products-button-' + index}
                            className="font-poppins uppercase font-semibold text-[#000000] text-2xl rounded-xl px-5 py-1 bg-primaryGreen hover:bg-primaryBlue transition-all"
-                           id={'see-all-products-button-id-' + index} accesskey="i">
+                           id={'see-all-products-button-id-' + index} >
                            See all products
                         </button>
                      </Link>
