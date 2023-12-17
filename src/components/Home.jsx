@@ -12,15 +12,15 @@ const Home = () => {
                     {productCards.map((card, index) => (
                         <section className="w-full md:w-1/3 text-center mb-16 md:mb-0" key={index}>
                             <div  className="flex flex-row space-x-7 items-center">
-                                <div  aria labelledby={'image-one-' + index} className="w-1/2 rounded-4xl overflow-hidden green-shadow">
-                                    <img src={card.imageOne} aria labelledby={'image-one-' + index} alt={'image-one-' + index} />
+                                <div  aria-labelledby={'image-one-' + index} className="w-1/2 rounded-4xl overflow-hidden green-shadow">
+                                    <img src={card.imageOne} aria-labelledby={'image-one-' + index} alt={'image-one-' + index} />
                                 </div>
-                                <div  aria labelledby={'image-two-' + index} className="w-1/2 rounded-4xl overflow-hidden green-shadow">
-                                    <img src={card.imageTwo} aria labelledby={'image-one-' + index} alt={'image-two-' + index} />
+                                <div  aria-labelledby={'image-two-' + index} className="w-1/2 rounded-4xl overflow-hidden green-shadow">
+                                    <img src={card.imageTwo} aria-labelledby={'image-one-' + index} alt={'image-two-' + index} />
                                 </div>
                             </div>
-                            <div  aria labelledby={'three-main-product-categories-' + index} className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
-                                <Link to={'products/' + card.path} aria labelledby={'kit Image number ' +index}  title={ 'product name' +card.name} >
+                            <div  aria-labelledby={'three-main-product-categories-' + index} className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
+                                <Link to={'products/' + card.path} aria-labelledby={'kit Image number ' +index}  title={ 'product name' +card.name} >
                                     <div className="uppercase text-linkBlack hover:text-primaryBlue transition-all font-poppins font-semibold text-2xl md:text-3xl lg:text-4xl mb-2">
                                         {card.name}
                                     </div>
